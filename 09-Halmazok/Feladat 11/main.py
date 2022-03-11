@@ -27,8 +27,8 @@ def elemszambekeres()->int:
             eredmeny = int(data)
             if(eredmeny < 10):
                 hibakiiras("Nem megfelelő számot adott meg.")
-            else:
-                hibakiiras("Nem számot adott meg.")
+        else:                
+            hibakiiras("Nem számot adott meg.")
 
     return eredmeny
 
