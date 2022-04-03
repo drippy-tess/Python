@@ -12,9 +12,9 @@ class Haromszog:
     def __str__(self) -> str:
         return f"A oldal = {self.a}\nB oldal = {self.b}\nC oldal = {self.c}\nEgyenlő oldalú háromszög területe = {self.egyenloOldaluHaromszogTerulet()}\nEgyenlő oldalú háromszög kerülete = {self.egyenloOldaluHaromszogKerulet()}"
 
-    def egyelnoOldaluHaromszogTerulet(self) -> float:
+    def egyenloOldaluHaromszogTerulet(self) -> float:
         m: float = (math.sqrt(3) / 2) * self.a
         return (self.a * m) / 2
 
-    def egyelnoOldaluHaromszogKerulet(self) -> float:
+    def egyenloOldaluHaromszogKerulet(self) -> float:
         return self.a * 3
