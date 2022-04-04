@@ -1,6 +1,6 @@
 import math
 
-class Haromszog:
+class Egyenloszaru:
     
     def __init__(self, a: float, b: float, c: float) -> None:
         super().__init__()
@@ -10,7 +10,7 @@ class Haromszog:
         self.c = c
 
     def __str__(self) -> str:
-        return f"A oldal = {self.a}\nB oldal = {self.b}\nC oldal = {self.c}\nEgyenlő szárú háromszög területe = {self.egyenloSzaruHaromszogTerulet()}\nEgyenlő szárú háromszög területe = {self.egyenloSzaruHaromszogKerulet()}"
+        return f"A oldal = {self.a}\nB oldal = {self.b}\nC oldal = {self.c}\nEgyenlő szárú háromszög területe = {self.egyenloSzaruHaromszogTerulet()}\nEgyenlő szárú háromszög kerülete = {self.egyenloSzaruHaromszogKerulet()}"
 
     def egyenloSzaruHaromszogTerulet(self) -> float:
         m: float = math.sqrt((self.b * self.b) - ((self.a * self.a) / 4))

@@ -1,6 +1,6 @@
 import math
 
-class Haromszog:
+class Egyenlooldalu:
     
     def __init__(self, a: float, b: float, c: float) -> None:
         super().__init__()
