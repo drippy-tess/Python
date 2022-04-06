@@ -1,10 +1,11 @@
 class Ssd:
-    def __init__(self, gyarto: str, tipus: str, meret: int):
-        super().__init()
-        
+    def __init__(self, gyarto: str, tipus: str, meret: int) -> None:
+        super().__init__()
+
         self.gyarto = gyarto
         self.tipus = tipus
-        self.meret =meret
+        self.meret = meret
         
-    def​ ​__str__​(​self​) ​->​ ​str​: 
- ​        ​return​ ​f"Az SSD típusa és gyártója: ​{​self​.gyarto}​ {self.tipus}\n​Mérete: ​{​self​.​meret}​GB"
+
+    def __str__(self) -> str:
+        return f"Az SSD márkája, és típusa: {self.gyarto} {self.tipus}\nMérete: {self.meret}GB"
