@@ -8,4 +8,4 @@ class Gpu:
         
 
     def __str__(self) -> str:
-        return f"Az Videókártya márkája, és típusa: {self.gyarto} {self.tipus}\nMemória sebessége = {self.ram}"
+        return f"Az Videókártya márkája, és típusa: {self.gyarto} {self.tipus}\nMemória mérete: {self.ram}GB"
