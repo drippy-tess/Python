@@ -19,4 +19,4 @@ class Processzor:
         self.ssd = ssd
 
     def __str__(self) -> str:
-        return f"A processzor típusa és gyártója: {self.gyarto} {self.tipus}\nÓrajele: {self.orajel}MHZ\nCache mérete: {self.cache}MB\n{self.gpu}\n{self.mobo}\n{self.ram}\n{self.gpu}\n{self.psu}\n{self.ssd}"
+        return f"A processzor márkája és típusa: {self.gyarto} {self.tipus}\nÓrajele: {self.orajel}MHZ\nCache mérete: {self.cache}MB\n{self.gpu}\n{self.mobo}\n{self.ram}\n{self.gpu}\n{self.psu}\n{self.ssd}"
