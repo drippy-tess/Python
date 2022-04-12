@@ -61,3 +61,4 @@ otszazFelettiSzamokSzama = otszazFelettiSzamokSzamanakMeghatarozasa(halmaz)
 print("\n")
 print(f"A halmazban {otszazFelettiSzamokSzama} ötszáz feletti szám van.")
 ```
+[Github page](https://github.com/drippy-tess/Python)
