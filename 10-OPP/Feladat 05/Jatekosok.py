@@ -1,5 +1,5 @@
 class Jatekosok:
-    def __init__(self, vezetknev: str, keresztnev: str, mezSzam: int, poszt: str, pontszam: int) -> None:
+    def __init__(self, vezetknev: str, keresztnev: str, mezSzam: int, poszt: str, pontszam: int,) -> None:
         super().__init__()
 
         self.vezetknev: str = vezetknev

@@ -19,3 +19,6 @@ print(csapat)
 
 print("A legtöbb pontszámmal rendelkező játékos:")
 print(csapat.legjobbJatekos())
+
+print("A játékosok sorrendben lévő mezszáma:")
+print(csapat.legtobbMez())

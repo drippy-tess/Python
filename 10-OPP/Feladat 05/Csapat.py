@@ -25,3 +25,15 @@ class Csapat:
                 max = self.jatekosok[i]
 
         return max
+
+    def legtobbMez(self) -> List[Jatekosok]:
+        temp: self.jatekosok.copy()
+
+        for i in range(0, len(self.jatekosok)):
+            for j in range(i, len(self.jatekosok)):
+                if(self.jatekosok[j].mezSzam < self.jatekosok[i].mezSzam):
+                    temp: self.jatekosok[i]
+                    self.jatekosok[i] = self.jatekosok[j]
+                    self.jatekosok[j] = temp
+        
+        return self
