@@ -1,7 +1,7 @@
 import random
 
 class Szuperhos:
-    def init(self, nev: str) -> None:
+    def __init__(self, nev: str) -> None:
         super().__init__()
 
         self.nev: str = nev
@@ -11,15 +11,13 @@ class Szuperhos:
     def __str__(self) -> str:
         return f"A szuperhős neve: {self.nev}, ereje: {self.ero}, életpont: {self.eletpont}"
 
-    def Tamad(self, ellenseg: "Szuperhos") -> bool:
-        nyert: bool = None
-
+    def tamad(self, ellenseg: "Szuperhos") -> None:
+        
         if(self.ero > ellenseg.eletpont):
-            nyert = True
-            return nyert
+            return f"{self.nev} nyert"
+        
         elif(self.ero < ellenseg.eletpont):
-            nyert = False
-            return nyert
+            return f"{self.nev} veszített"
+        
         else:
-            nyert = None
-            return nyert
+            f"Az ellenfelek nem bírnak egymással"
