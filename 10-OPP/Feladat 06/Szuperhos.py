@@ -12,4 +12,4 @@ class Szuperhos:
         return f"A szuperhős neve: {self.nev}, ereje: {self.ero}, életpont: {self.eletpont}"
 
     def tamad(self, ellenseg: "Szuperhos") -> bool:
-        return self.ero >ellenseg.eletpont
+        return self.ero > ellenseg.eletpont
