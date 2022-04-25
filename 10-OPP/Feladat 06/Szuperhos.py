@@ -14,10 +14,10 @@ class Szuperhos:
     def tamad(self, ellenseg: "Szuperhos") -> None:
         
         if(self.ero > ellenseg.eletpont):
-            return f"{self.nev} nyert"
+            print (f"{self.nev} nyert")
         
         elif(self.ero < ellenseg.eletpont):
-            return f"{self.nev} veszített"
+             print(f"{self.nev} veszített")
         
         else:
-            f"Az ellenfelek nem bírnak egymással"
+            print(f"Az ellenfelek nem bírnak egymással")

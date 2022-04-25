@@ -1,10 +1,10 @@
 from Szuperhos import Szuperhos
 
-szuperhos1: Szuperhos = Szuperhos("hos")
-szuperhos2: Szuperhos = Szuperhos("hos1")
+szuperhos1: Szuperhos = Szuperhos("Spiderman")
+szuperhos2: Szuperhos = Szuperhos("Flash")
 
 print(szuperhos1)
-Szuperhos.tamad("szuperhos2")
-
 print(szuperhos2)
-Szuperhos.tamad("szuperhos1")
+
+szuperhos1.tamad(szuperhos2)
+szuperhos2.tamad(szuperhos1)
