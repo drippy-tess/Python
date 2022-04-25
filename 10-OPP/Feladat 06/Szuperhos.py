@@ -11,13 +11,5 @@ class Szuperhos:
     def __str__(self) -> str:
         return f"A szuperhős neve: {self.nev}, ereje: {self.ero}, életpont: {self.eletpont}"
 
-    def tamad(self, ellenseg: "Szuperhos") -> None:
-        
-        if(self.ero > ellenseg.eletpont):
-            print (f"{self.nev} nyert")
-        
-        elif(self.ero < ellenseg.eletpont):
-             print(f"{self.nev} veszített")
-        
-        else:
-            print(f"Az ellenfelek nem bírnak egymással")
+    def tamad(self, ellenseg: "Szuperhos") -> bool:
+        return self.ero >ellenseg.eletpont
