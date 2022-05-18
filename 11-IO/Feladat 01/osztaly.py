@@ -1,4 +1,5 @@
 from diak import Diak
+from diakio import DiakIO
 from typing import *
 
 class Osztaly:
@@ -31,3 +32,23 @@ class Osztaly:
 
 
         return joDiakok
+
+    @staticmethod
+    def atlagfelettiek(diakok:List[Diak], atlag: float) -> None:
+        atlagFelettiek: List[Diak] = []
+
+        for diak in diakok:
+            if(diak.atlag > atlag):
+                atlagFelettiek.append(diak)
+
+        DiakIO.write("atlagfelettiek.txt", atlagFelettiek)
+
+    @staticmethod
+    def vanEkitunotanulo(diakok: List[Diak]) -> bool:
+        van: bool = False
+
+        for diak in diakok:
+            if(diak.atlag == 5.00):
+                van = True
+                break
+        return van

@@ -1,3 +1,4 @@
+from operator import truediv
 from diak import Diak
 from typing import *
 from diakio import DiakIO
@@ -21,3 +22,16 @@ print("Az osztály legjobb diákjai: \n")
 joDiakok: List[Diak] = Osztaly.legjobbak(diakok)
 for diak in joDiakok:
     print(f"{diak}\n")
+
+#5 - atlagfelett.txt allományba keressük ki azon tanulókat kiknek pontjai meghaladják az átlagot!
+Osztaly.atlagfelettiek(diakok, atlag)
+print(f"Az osztály átlag feletti diákjainak exportja megtörtént.")
+
+#6 - Van e kitünő tanulónk?
+vanE: bool = Osztaly.vanEkitunotanulo(diakok)
+if(vanE):
+    print(f"Van kitűnő tanuló!")
+else:
+    print(f"Az osztályban nincs kitűnő tanuló!")
+
+#7 - Hány elégtelen, elégséges, jó, jeles és kitünő tanuló van az osztályban?
