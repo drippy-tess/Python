@@ -35,3 +35,7 @@ else:
     print(f"Az osztályban nincs kitűnő tanuló!")
 
 #7 - Hány elégtelen, elégséges, jó, jeles és kitünő tanuló van az osztályban?
+diakAtlagok: Dict[str, int] = Osztaly.kitunoTanulo(diakok)
+print(f"Az osztáyban átlag szerint a következő eredményt érték el a diákok:")
+for (key, value) in diakAtlagok.items():
+    print(f"\t- {key} : {value}")

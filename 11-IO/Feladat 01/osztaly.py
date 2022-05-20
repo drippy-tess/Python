@@ -52,3 +52,29 @@ class Osztaly:
                 van = True
                 break
         return van
+
+    @staticmethod
+    def kitunoTanulo(diakok: List[Diak]) -> Dict[str, int]:
+
+        diakAtlagok: Dict[str, int] = {}
+        alsoHatarertek: int = 0
+
+        hatarertekek: Dict[str, int] = {
+            "elégtelen" : 2,
+            "elégséges" : 3,
+            "közepes": 4,
+            "jó" : 5,
+            "jeles": 6,
+        }
+
+        for (key, value) in hatarertekek.items():
+            darab: int = 0
+
+            for diak in diakok:
+                if(diak.atlag >= alsoHatarertek and diak.atlag < value):
+                    darab += 1
+
+            diakAtlagok[key] = darab
+            hatarertekek = value
+
+        return diakAtlagok
