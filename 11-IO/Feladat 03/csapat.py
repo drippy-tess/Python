@@ -1,5 +1,3 @@
-from audioop import add
-from sqlite3 import DatabaseError
 from jatekos import Jatekos
 from jatekosio import JatekosIO
 from typing import *
@@ -26,22 +24,14 @@ class Csapat:
     @staticmethod
     def csapatJatekosa (jatekosok:List[Jatekos]) -> None:
         
-        #kikeressük a kulcsokat
         csapatok:set[str] = set()
         for jatekos in jatekosok:
             csapatok.add(jatekos.csapat)
         
         csapattagok: Dict[str,List[str]] = {}
-
-        #minden kulcshoz a szótárban csinálnuk egy üres listát
-        #mivel memóriát kell a listának lefoglalni
-        #enek célje, h a következő ciklusban az új elemet
-        #a játékost listába tudjuk tenni
         for csapat in csapatok:
             csapattagok[csapat] = []
 
-        #játékos kikeresése ami az éppen soronlévő csapathoz tartozik
-        #majd hozzáadása
         for csapat in csapatok:
             for jatekos in jatekosok:
                 if(csapat == jatekos.csapat):                  
